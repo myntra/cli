@@ -301,7 +301,7 @@ class ReactNativeModules {
  * Sometimes Gradle can be called outside of JavaScript hierarchy. Detect the directory
  * where build files of an active project are located.
  */
-def projectRoot = rootProject.projectDir
+def projectRoot = new File(rootProject.projectDir, 'Myntra-Android')
 
 def autoModules = new ReactNativeModules(logger, projectRoot)
 
